@@ -1,0 +1,181 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - yo
+      - hello world
+      - hi there
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - thanks, goodbye
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - /affirm
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+  - intent: stop
+    examples: |
+      - stop
+      - nevermind
+      - please stop
+      - i want to stop
+      - stop the form
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: name
+    examples: |
+      - My name is [Gowthaam](name)
+      - [Priyan](name)
+      - [Radde](name)
+      - [Lashuda](name)
+      - Name is [Lakshmi](name)
+
+  - intent: age
+    examples: |
+      - My age is [20](age)
+      - [26](age)
+
+  - intent: Idea
+    examples: |
+      - I want a business idea
+      - start business
+      - business plan
+
+  - intent: tailoring
+    examples: |
+      - I am interested in Tailoring
+      - I love tailoring
+      - Tailoring is something that interests me
+      - In my spare time, I tailor
+      - I stich clothes for my children in my free time
+      - I stitch clothes
+      - I make dresses
+      - dresses
+
+  - intent: experience
+    examples: |
+      - I have [5 years](experience) of experience
+      - I've worked for [7 years](experience)
+      - I have been doing this business for past [3 years](experience)
+      - I've been in this line of work for [2 years](experience)
+      - I am in this field for [one year](experience)
+      - [10 years](experience)
+
+  - intent: machine
+    examples: |
+      - [Yes](machine) I have a machine
+      - [No](machine) I dont have a machine
+      - [yes](machine) I have a machine
+      - [no](machine) I dont hsve a machine
+  - intent: garmentkind
+    examples: |
+      - I make [salwar](garmentkind) [suits](garmentkind) and [chudidhar](garmentkind)
+      - I make [shirts](garmentkind) and [pants](garmentkind) from scratch
+      - I stitch [blouse](garmentkind)
+      - I sew [frocks](garmentkind)
+      - I stitch [coat](garmentkind)
+      - I stitch [uniforms](garmentkind) for students
+
+  - intent: investment
+    examples: |
+      - My investment is [5000](investment) rupees
+      - The money that I can invest is [9000](investment)
+      - [10000](investment) rupees
+
+  - intent: comp
+    examples: |
+      - There are [3 people](comp)
+      - [5 people](comp)
+      - There are around [7 people]
+
+  - intent: location
+    examples: |
+      - I'm from [Chennai](location)
+      - I'm from [Coimbatore](location)
+      - My location is [Bangalore](location)
+      - Location [Delhi](location)
+
+  - intent: raw
+    examples: |
+      - I buy them from a nearby [town](raw)
+      - I get them from a [town](raw) closeby
+      - I have a [wholesale seller](raw) in my village
+
+  - intent: embroidery
+    examples: |
+      - I am interested in embroidery
+      - I do embroidery in cloths in my free time
+      - I love in designing the dresses

@@ -1,0 +1,61 @@
+version: "2.0"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Activate Details Form
+    steps:
+      - intent: Idea
+      - action: simple_details_form
+      - active_loop: simple_details_form
+
+  - rule: Submit Details Form
+    condition:
+      - active_loop: simple_details_form
+    steps:
+      - action: simple_details_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_name_age
+      - action: utter_ask_passion
+
+  - rule: Activate Tailoring Form
+    steps:
+      - intent: tailoring
+      - action: simple_tailoring_form
+      - active_loop: simple_tailoring_form
+
+  - rule: Submit Tailoring Form
+    condition:
+      - active_loop: simple_tailoring_form
+    steps:
+      - action: simple_tailoring_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_swot
+
+  - rule: Activate Embroidery Form
+    steps:
+      - intent: embroidery
+      - action: simple_embroidery_form
+      - active_loop: simple_embroidery_form
+
+  - rule: Submit Embroidery Form
+    condition:
+      - active_loop: simple_embroidery_form
+    steps:
+      - action: simple_embroidery_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_swot1

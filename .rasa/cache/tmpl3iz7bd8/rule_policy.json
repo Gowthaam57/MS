@@ -1,0 +1,49 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Idea\"}}]": "simple_details_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Idea\"}}, {\"active_loop\": {\"name\": \"simple_details_form\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}, \"user\": {\"intent\": \"Idea\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tailoring\"}}]": "simple_tailoring_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tailoring\"}}, {\"active_loop\": {\"name\": \"simple_details_form\"}, \"prev_action\": {\"action_name\": \"simple_tailoring_form\"}, \"user\": {\"intent\": \"tailoring\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_tailoring_form\"}}]": "utter_swot",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_tailoring_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_swot\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}}]": "utter_name_age",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_name_age\"}}]": "utter_ask_passion",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_name_age\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_ask_passion\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [
+      "simple_tailoring_form",
+      "simple_details_form"
+    ],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"simple_details_form\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}, \"user\": {\"intent\": \"Idea\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"simple_details_form\"}, \"prev_action\": {\"action_name\": \"simple_tailoring_form\"}, \"user\": {\"intent\": \"tailoring\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Idea\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "handling active loops and forms - simple_details_form",
+      "handling active loops and forms - simple_tailoring_form",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_tailoring_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_swot\"}}]",
+      "handling active loops and forms - simple_details_form - action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tailoring\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_name_age\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_ask_passion\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_details_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_name_age\"}}]",
+      "predicting default action with intent restart",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"simple_tailoring_form\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tailoring\"}}, {\"active_loop\": {\"name\": \"simple_details_form\"}, \"prev_action\": {\"action_name\": \"simple_tailoring_form\"}, \"user\": {\"intent\": \"tailoring\"}}]",
+      "handling active loops and forms - simple_tailoring_form - action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]"
+    ]
+  }
+}

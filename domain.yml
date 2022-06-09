@@ -1,0 +1,170 @@
+version: "3.0"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+  - greet
+  - inform
+  - goodbye
+  - affirm
+  - stop
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - name
+  - age
+  - Idea
+  - tailoring
+  - experience
+  - machine
+  - garmentkind
+  - investment
+  - comp
+  - location
+  - raw
+  - embroidery
+entities:
+  - name
+  - age
+  - experience
+  - machine
+  - garmentkind
+  - investment
+  - comp
+  - location
+  - raw
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: name
+  age:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: age
+
+  experience:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: experience
+  machine:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: machine
+
+  garmentkind:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: garmentkind
+
+  investment:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: investment
+
+  comp:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: comp
+
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: location
+
+  raw:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: raw
+
+forms:
+  simple_details_form:
+    required_slots:
+      - name
+      - age
+
+  simple_tailoring_form:
+    required_slots:
+      - experience
+      - machine
+      - garmentkind
+      - location
+      - comp
+      - raw
+      - investment
+
+  simple_embroidery_form:
+    required_slots:
+      - experience
+      - location
+      - comp
+      - raw
+      - investment
+
+responses:
+  utter_greet:
+    - text: Hey! How are you?
+  utter_cheer_up:
+    - image: https://i.imgur.com/nGF1K8f.jpg
+      text: "Here is something to cheer you up:"
+  utter_did_that_help:
+    - text: Did that help you?
+  utter_happy:
+    - text: Great, carry on!
+  utter_goodbye:
+    - text: Bye
+  utter_iamabot:
+    - text: I am a bot, powered by Rasa.
+  utter_ask_passion:
+    - text: Rest assured.We are here to help you. What are your interests?
+  utter_ask_name:
+    - text: What is your name?
+  utter_ask_age:
+    - text: What is your age?
+  utter_ask_experience:
+    - text: How much experience do you have?
+  utter_ask_machine:
+    - text: Do you have a tailoring machine?
+  utter_ask_garmentkind:
+    - text: What kind of garments do you sew?
+  utter_ask_investment:
+    - text: How much is your investment?
+  utter_ask_comp:
+    - text: How many people with the same profession are there in your locality? (Kindly enter it in this format Example.. 5 people or 3 people)
+  utter_ask_location:
+    - text: Where are you from? (Kindly enter it in this format Example.. Location Chennai)
+  utter_ask_raw:
+    - text: Where do you buy your raw materials from?
+  utter_name_age:
+    - text: Welcome {name}. Hope we can be of help. Kindly answer the following questions.
+  utter_swot:
+    - text: Strengths , You would have liberty to work from home at your own pace. Weakness , Profit Margin will not be high. Oppurtunities , Quality work done will generate more orders. Threats , Lot of competeitors
+  utter_swot1:
+    - text: swot
+
+actions:
+  - utter_ask_continue
+  - utter_goodbye
+  - utter_greet
+  - validate_simple_details_form
+  - validate_simple_tailoring_form
+  - validate_simple_embroidery_form

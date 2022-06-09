@@ -1,0 +1,7 @@
+{
+  "rule_only_slots": [],
+  "rule_only_loops": [
+    "simple_tailoring_form",
+    "simple_details_form"
+  ]
+}

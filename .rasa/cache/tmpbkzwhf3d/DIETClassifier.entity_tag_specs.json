@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-age",
+      "2": "I-age",
+      "3": "L-age",
+      "4": "U-age",
+      "5": "B-experience",
+      "6": "I-experience",
+      "7": "L-experience",
+      "8": "U-experience",
+      "9": "B-investment",
+      "10": "I-investment",
+      "11": "L-investment",
+      "12": "U-investment",
+      "13": "B-machine",
+      "14": "I-machine",
+      "15": "L-machine",
+      "16": "U-machine",
+      "17": "B-name",
+      "18": "I-name",
+      "19": "L-name",
+      "20": "U-name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-age": 1,
+      "I-age": 2,
+      "L-age": 3,
+      "U-age": 4,
+      "B-experience": 5,
+      "I-experience": 6,
+      "L-experience": 7,
+      "U-experience": 8,
+      "B-investment": 9,
+      "I-investment": 10,
+      "L-investment": 11,
+      "U-investment": 12,
+      "B-machine": 13,
+      "I-machine": 14,
+      "L-machine": 15,
+      "U-machine": 16,
+      "B-name": 17,
+      "I-name": 18,
+      "L-name": 19,
+      "U-name": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
