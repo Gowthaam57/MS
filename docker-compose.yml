@@ -7,7 +7,7 @@ services:
       - all
 
   rasa-server:
-    image: <none>:latest
+    image: gowthaam/buzzbot:latest
     working_dir: /app
     build: "./"
     restart: always
@@ -24,7 +24,7 @@ services:
       - all
 
   rasa-actions-server:
-    image: <none>:latest
+    image: gowthaam/buzzbot:latest
     working_dir: /app
     build: "./"
     restart: always
