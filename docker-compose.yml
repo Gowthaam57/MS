@@ -1,14 +1,14 @@
 version: "3.4"
 services:
   duckling-server:
-    image: gowthaam/buzzbot:latest
+    image: gowthaam/buzzbot
     ports:
       - 8000:8000
     networks:
       - all
 
   rasa-server:
-    image: gowthaam/buzzbot:latest
+    image: gowthaam/buzzbot
     working_dir: /app
     build: "./"
     restart: always
@@ -25,7 +25,7 @@ services:
       - all
 
   rasa-actions-server:
-    image: gowthaam/buzzbot:latest
+    image: gowthaam/buzzbot
     working_dir: /app
     build: "./"
     restart: always

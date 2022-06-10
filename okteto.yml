@@ -1,6 +1,6 @@
 name: rasa-server
 autocreate: true
-image: okteto.dev/gowthaam/buzzbot:latest
+image: okteto.dev/gowthaam/buzzbot
 command: bash
 volumes:
   - /root/.cache/pip
