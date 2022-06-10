@@ -1,12 +1,12 @@
 name: rasa-server
 autocreate: true
-image: okteto.dev/gowthaam/buzzbot
+image: gowthaam/buzzbot
 command: bash
 volumes:
   - /root/.cache/pip
 sync:
   - .:/app
 forward:
-  - 5006:5006
+  - 8082:8080
 reverse:
   - 8080:8080
