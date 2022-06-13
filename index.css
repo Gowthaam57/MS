@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 6px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, var(--bg-opacity));
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: rgb(161, 202, 255);
+}
+
+@layer utilities {
+    .clip-your-needful-style {
+      flex-base: 60%;
+    clip-path: polygon(
+    20% 0%,
+    100% 0%,
+    100% 100%,
+    100% 100%,
+    0% 100%,
+    10% 0%
+    );
+    /* clip-path: polygon(
+    20% 0%,
+    100% 0%,
+    80% 50%,
+    100% 100%,
+    20% 100%,
+    0% 50%
+    ); */
+  }
+    .clip-your-needful-style2 {
+      flex-base: 60%;
+    clip-path: polygon(
+    20% 0%,
+    90% 0%,
+    100% 100%,
+    0% 100%,
+    0% 100%,
+    0% 0%
+    );
+  }
+}
