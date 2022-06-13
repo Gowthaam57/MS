@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 nlu:
   - intent: greet
     examples: |
@@ -94,7 +94,6 @@ nlu:
       - are you a human?
       - am I talking to a bot?
       - am I talking to a human?
-
   - intent: name
     examples: |
       - My name is [Gowthaam](name)
@@ -102,18 +101,15 @@ nlu:
       - [Radde](name)
       - [Lashuda](name)
       - Name is [Lakshmi](name)
-
   - intent: age
     examples: |
       - My age is [20](age)
       - [26](age)
-
   - intent: Idea
     examples: |
       - I want a business idea
       - start business
       - business plan
-
   - intent: tailoring
     examples: |
       - I am interested in Tailoring
@@ -124,7 +120,6 @@ nlu:
       - I stitch clothes
       - I make dresses
       - dresses
-
   - intent: experience
     examples: |
       - I have [5 years](experience) of experience
@@ -133,7 +128,6 @@ nlu:
       - I've been in this line of work for [2 years](experience)
       - I am in this field for [one year](experience)
       - [10 years](experience)
-
   - intent: machine
     examples: |
       - [Yes](machine) I have a machine
@@ -148,34 +142,52 @@ nlu:
       - I sew [frocks](garmentkind)
       - I stitch [coat](garmentkind)
       - I stitch [uniforms](garmentkind) for students
-
   - intent: investment
     examples: |
       - My investment is [5000](investment) rupees
       - The money that I can invest is [9000](investment)
       - [10000](investment) rupees
-
   - intent: comp
     examples: |
       - There are [3 people](comp)
       - [5 people](comp)
       - There are around [7 people]
-
   - intent: location
     examples: |
       - I'm from [Chennai](location)
       - I'm from [Coimbatore](location)
       - My location is [Bangalore](location)
       - Location [Delhi](location)
-
   - intent: raw
     examples: |
       - I buy them from a nearby [town](raw)
       - I get them from a [town](raw) closeby
       - I have a [wholesale seller](raw) in my village
-
+      - I usually go to the [shop](raw) nearby
   - intent: embroidery
     examples: |
       - I am interested in embroidery
       - I do embroidery in cloths in my free time
       - I love in designing the dresses
+  - intent: restart
+    examples: |
+      - restart the conversation
+      - restart
+      - start again
+  - intent: farming
+    examples: |
+      - I am interested in farming
+      - farming
+      - I would like to cultivate crops
+  - intent: land
+    examples: |
+      - [Yes](land) I own a land
+      - [No](land) I don't own a land
+      - [yes](land) I own a land
+
+  - intent: no idea
+    examples: |
+      - I don't have a idea. But I want to earn more money
+      - No clue
+      - No idea
+      - no idea

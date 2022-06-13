@@ -1,0 +1,62 @@
+﻿name,age,education,occupation,time spent daily(in hrs),competitors,space,resources ,initial investment,experience(in years),skills,skills_uniqueId
+Anandhi,30,10,tailoring,5,0,1,1,2000,2,tailoring,1
+Lakshmi,35,12,animal husbandry,4,1,1,1,6000,3,animal husbandry,2
+Anitha,26,10,farming,3,1,1,1,5000,5,farming,3
+Chandraleka,28,12,embroidery,3,0,0,0,4000,3,tailoring,1
+Devaki,30,10,tailoring,4,0,1,1,5000,2,tailoring,1
+Hemalatha,29,12,start with hand sewing,5,0,1,0,6000,5,tailoring,1
+Indumathi,34,10,embroidery,4,0,0,1,1000,3,tailoring,1
+Manjushri,39,12,terrace gardening,3,1,0,1,5000,2,farming,3
+Roopa,35,10,work in a tailoring shop,4,1,0,0,2000,4,tailoring,1
+Revathi,34,10,rent land for animal husbandry,6,0,1,0,10000,2,animal husbandry,2
+Rency,26,12,dairy women,5,0,0,1,3000,0,animal husbandry,2
+Supriya,29,10,farming,4,0,1,0,8000,3,farming,3
+Tulasi,34,12,embroidery,5,1,0,1,3000,4,tailoring,1
+Saranya,31,10,animal husbandry,5,1,1,1,3000,2,animal husbandry,2
+Valarmathi,39,10,terrace gardening,4,0,0,0,7000,1,farming,3
+Kowsalya,28,12,dairy women,6,1,1,0,1000,0,animal husbandry,2
+Latha,34,10,embroidery,6,0,1,0,2000,4,tailoring,1
+Kala,21,10,farming,6,1,1,1,3000,2,farming,3
+Bhuvana,32,12,milker,3,0,0,0,500,0.5,animal husbandry,2
+Chitra,24,12,animal husbandry,5,1,1,1,5000,3,animal husbandry,2
+Kalpana,35,10,embroidery( in tailoring shop),3,0,0,0,4000,1,tailoring,1
+Swapna,36,12,rent land for animal husbandry,4,1,1,0,9000,3,animal husbandry,2
+Rukmani,25,12,vegetable supplier,3,0,0,1,2000,0,farming,3
+Saraswathi,24,10,fruits seller,3,0,0,1,2000,0,farming,3
+Parvathi,28,10,product supplier(tailoring shop),3,0,0,1,2500,0,tailoring,1
+Santhi,32,12,farming,5,0,1,1,5000,1,farming,3
+Radha,29,12,embroidery,2,0,1,1,3000,2,tailoring,1
+Rama,31,10,milker,5,1,0,1,5000,3,animal husbandry,2
+Thamarai,36,12,dairy women,3,1,1,0,6000,0,animal husbandry,2
+Valli,35,12,farming,5,0,1,0,8000,2,farming,3
+Nirmala,24,12,embroidery,5,0,1,1,3000,5,tailoring,1
+Maheswari,25,10,vegetable supplier,5,1,1,0,3000,0,farming,3
+Manimegalai,36,12,fruits seller,5,1,1,0,2000,0,farming,3
+Senthamarai,24,10,product supplier(tailoring shop),3,1,1,0,2500,0,tailoring,1
+Parvathi,20,12,embroidery,2,1,1,1,0,1,tailoring,1
+Vimala,32,10,product supplier(tailoring shop),1,1,1,0,0,2,tailoring,1
+Vijaya,25,12,product supplier(tailoring shop),5,1,0,0,0,3,tailoring,1
+Steffi,40,12,product supplier(tailoring shop),4,0,0,0,0,2,tailoring,1
+Fathima,33,12,embroidery,1,0,0,1,0,1,tailoring,1
+Gayathri,39,10,embroidery,1,1,0,1,0,0,tailoring,1
+Priya,27,10,vegetable supplier,3,1,1,1,0,0,animal husbandry,2
+Parimala,42,12,vegetable supplier,2,1,0,0,0,0,animal husbandry,2
+Santhi,50,12,milker,3,1,1,1,0,0,animal husbandry,2
+Suchithra,29,10,work in a tailoring shop,1,1,1,1,0,0,tailoring,1
+Priyanka,36,12,milker,2,1,0,0,0,0,animal husbandry,2
+Dharshini,20,10,animal husbandry,3,1,1,1,8000,1,farming,3
+Savitha,38,10,animal husbandry,4,1,1,1,10000,2,farming,3
+Sowmiya,19,12,terrace gardening,2,0,0,1,6000,1,farming,3
+Aishwarya,22,12,terrace gardening,3,1,0,1,5000,3,farming,3
+Divya,23,10,tailoring,2,0,1,1,2000,3,tailoring,1
+Nithya,25,10,animal husbandry,3,0,1,1,2000,4,animal husbandry,2
+Ramya,40,10,farming,4,0,1,1,4000,6,farming,3
+Archana,30,12,tailoring,3,1,0,1,0,4,tailoring,1
+Sarojini,35,10,vegetable supplier,4,1,0,1,2000,2,farming,3
+Charu,30,10,fruits seller,5,1,0,1,4000,3,farming,3
+Swetha,28,12,work in farm,3,1,0,0,2000,3,farming,3
+Chandra,22,10,start with hand sewing,4,0,1,0,1000,3,tailoring,1
+Sandhya,25,12,rent land for farming,3,0,1,0,3000,3,farming,3
+Mahesha,31,12,rent land for tailor shop,2,1,1,0,5000,1,tailoring,1
+Gowthaam,35,10,tailoring,4,1,0,1,3000.0,5,tailoring,1
+

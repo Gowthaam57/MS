@@ -1,6 +1,22 @@
-version: "2.0"
+version: "3.0"
 
 rules:
+  - rule: Greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Happy
+    steps:
+      - intent: mood_great
+      - action: utter_happy
+
+  - rule: Corner Case
+    steps:
+      - intent: no idea
+      - action: utter_list
+      - action: utter_ask_passion
+
   - rule: Say goodbye anytime the user says goodbye
     steps:
       - intent: goodbye
@@ -59,3 +75,19 @@ rules:
       - slot_was_set:
           - requested_slot: null
       - action: utter_swot1
+
+  - rule: Activate Farming Form
+    steps:
+      - intent: farming
+      - action: simple_farming_form
+      - active_loop: simple_farming_form
+
+  - rule: Submit Farming Form
+    condition:
+      - active_loop: simple_farming_form
+    steps:
+      - action: simple_farming_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_swot2

@@ -3,27 +3,31 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+  - Idea
+  - affirm
+  - age
+  - bot_challenge
+  - comp
+  - deny
+  - embroidery
+  - experience
+  - farming
+  - garmentkind
+  - goodbye
   - greet
   - inform
-  - goodbye
-  - affirm
-  - stop
-  - deny
+  - investment
+  - land
+  - location
+  - machine
   - mood_great
   - mood_unhappy
-  - bot_challenge
   - name
-  - age
-  - Idea
-  - tailoring
-  - experience
-  - machine
-  - garmentkind
-  - investment
-  - comp
-  - location
   - raw
-  - embroidery
+  - restart
+  - stop
+  - tailoring
+  - no idea
 entities:
   - name
   - age
@@ -34,6 +38,7 @@ entities:
   - comp
   - location
   - raw
+  - land
 slots:
   name:
     type: text
@@ -47,7 +52,8 @@ slots:
     mappings:
       - type: from_entity
         entity: age
-
+    max_value: 1.0
+    min_value: 0.0
   experience:
     type: text
     influence_conversation: true
@@ -60,66 +66,44 @@ slots:
     mappings:
       - type: from_entity
         entity: machine
-
   garmentkind:
     type: text
     influence_conversation: true
     mappings:
       - type: from_entity
         entity: garmentkind
-
   investment:
     type: float
     influence_conversation: true
     mappings:
       - type: from_entity
         entity: investment
-
+    max_value: 1.0
+    min_value: 0.0
   comp:
     type: text
     influence_conversation: true
     mappings:
       - type: from_entity
         entity: comp
-
   location:
     type: text
     influence_conversation: true
     mappings:
       - type: from_entity
         entity: location
-
   raw:
     type: text
     influence_conversation: true
     mappings:
       - type: from_entity
         entity: raw
-
-forms:
-  simple_details_form:
-    required_slots:
-      - name
-      - age
-
-  simple_tailoring_form:
-    required_slots:
-      - experience
-      - machine
-      - garmentkind
-      - location
-      - comp
-      - raw
-      - investment
-
-  simple_embroidery_form:
-    required_slots:
-      - experience
-      - location
-      - comp
-      - raw
-      - investment
-
+  land:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: land
 responses:
   utter_greet:
     - text: Hey! How are you?
@@ -159,12 +143,48 @@ responses:
   utter_swot:
     - text: Strengths , You would have liberty to work from home at your own pace. Weakness , Profit Margin will not be high. Oppurtunities , Quality work done will generate more orders. Threats , Lot of competeitors
   utter_swot1:
-    - text: swot
+    - text: Strength limited startup risk, economically secure business and high gross margin. Weakness downward pricing issues during times of economic recession and competitors can offer similar products quickly. Opportunity continued expansion for online sales and ability to develop additional stores. Threats changes in regulation can impact the business and products are already sold by major competitors
+  utter_ask_land:
+    - text: Do you own a land?
+  utter_swot2:
+    - text: Strengths Home Market,Close to Consumers,Strong link with government providing subsidies and Skilled Staffs. Opportunities Co-operation,Good Understanding of market, Growing Market for organic food, Agricultural Equipment Rental. Weakness Tight Regulation,High market awareness,Lack of investment,Customers already have strong attachments to existing food suppliers and supermarkets,Premium Price, No reputation yet. Threats Variations in currency,Cheaper overseas land and labor, Saturated market low opportunities for growth.
+  utter_list:
+    - text: Try choosing a field from these [Tailoring,Embroidery,Farming]
 
 actions:
+  - action_restart
   - utter_ask_continue
   - utter_goodbye
   - utter_greet
   - validate_simple_details_form
-  - validate_simple_tailoring_form
   - validate_simple_embroidery_form
+  - validate_simple_farming_form
+  - validate_simple_tailoring_form
+forms:
+  simple_details_form:
+    required_slots:
+      - name
+      - age
+  simple_tailoring_form:
+    required_slots:
+      - experience
+      - machine
+      - garmentkind
+      - location
+      - comp
+      - raw
+      - investment
+  simple_embroidery_form:
+    required_slots:
+      - experience
+      - location
+      - comp
+      - raw
+      - investment
+  simple_farming_form:
+    required_slots:
+      - land
+      - experience
+      - location
+      - raw
+      - investment
